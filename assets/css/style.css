@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Calibri;
 }
 .points {
     width: 30px;
@@ -50,7 +51,11 @@ nav {
 nav a {
     margin-right: 10px;
     text-decoration: none;
-    color: rgb(255, 81, 0);
+    color: #999;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #ff5100;
 }
 .header-area {
     display: flex;
@@ -61,17 +66,17 @@ nav a {
 .header-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .header-left h1 {
   margin-bottom: 5px;
-  color: rgb(255, 81, 0);
+  color: #999;
 }
+
 .header-left h2 {
     margin-bottom: 20px;
     font-size: 18px;
-    color: rgb(255, 81, 0);
+    color: #999;
 }
 .header-left button {
     padding: 7px 10px;
@@ -109,30 +114,50 @@ button:hover {
 .skill-main {
     background-color: #202020;
 }
+.skill-item-area {
+    display: none;
+}
 .skill-area {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 40px 0px;
+    background-color: red;
+    position: relative;
 }
-.skill-item {
+.skill-item-frente {
     width: 300px;
     height: 90px;
     margin: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     cursor: pointer;
     box-shadow: 1px 2px 5px #000;
     overflow: hidden;
     background-color:rgba(255, 81, 0);
-    padding: 10px;
     border-radius: 5px;
+    position: relative;
 }
-.skill-item p {
+.skill-item-frente p {
     color: #000;
     margin: 0;
+}
+.skill-item-verso {
+    width: 300px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #000;
+    box-shadow: 1px 2px 5px #000;
+    position:absolute;
+    display: none;
+}
+
+.skill-item-verso ul li {
+    float: left;
+    list-style:none;
+    margin: 10px;
 }
 .mini-logo {
     width: 20%; 
@@ -190,6 +215,7 @@ footer {
     height: 20px;
     margin: 10px;
 }
+
 @media(max-width:900px)  {
     .header-area {
         flex-direction: column;
