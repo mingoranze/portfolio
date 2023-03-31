@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.close {
+    display: none;
+}
 body {
     background-color: #e0fbfc;
 }
 .container {
-    width: 720px;
-    max-width: 1020px;
+    max-width: 1140px ;
     margin: auto;
 }
 section {
@@ -19,15 +21,24 @@ section {
     background-color: #293241;
     color: #ee6c4d;
     flex-direction: column;
+    transition: ease all .3s;
+    max-width: 100%;
 }
 header {
     display: flex;
+    width: 100%;
     height: 100vh;
 }
 .header-left {
     background-color: #293241;
-    width: 20%;
+    width: 12rem;
     overflow: hidden;
+}
+.header-left-mobile {
+    background-color: #293241;
+    width: 12rem;
+    overflow: hidden;
+    display: none;
 }
 .header-pessoa {
     display: flex;
@@ -35,15 +46,26 @@ header {
     align-items: center;
     margin-top: 60px;
 }
+.header-pessoa .img{
+    border-radius: 50px;
+    overflow: hidden;
+    width: 80px;
+    height: auto;
+    border: 1px solid #ee6c4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
 .header-pessoa img {
-    width: 100px;
+    width: 100%;
 }
 .header-pessoa h1 {
     font-size: 1rem;
     color: #ee6c4d;
 }
 .header-pessoa p {
-    font-size: .8rem;
+    font-size: .6rem;
     color: #ee6c4d;
 }
 .social {
@@ -67,7 +89,7 @@ nav ul {
 nav ul li {
     margin: 10px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 0.7rem;
     color: #414141;
 }
 nav ul li a {
@@ -107,17 +129,56 @@ nav ul li a:visited {
     display: none;
 }
 
-@media (max-width:862px) {
+@media (max-width:900px) {
+    .container {
+        width: 100%;
+    }
     header {
         flex-direction: column;
         align-items: center;
     }
     .header-left {
         position: absolute;
-        height: 30px;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0%;
+        box-shadow: 1px 1px 5px #000;
+        transition: ease all .3s;
     }
-   
+
     .header-right {
         flex: 1;
+        padding: 50px 10px;
+        position: relative;
+    }
+    .menu-mobile {
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 998;
+        margin: 10px 5px;
+        cursor: pointer;
+    }
+    .menu-mobile .line {
+        width: 100%;
+        height: 2px;
+        background-color: #ee6c4d;
+    }
+    .close {
+        color: #ee6c4d;
+        display: block;
+        position: absolute;
+        margin: 20px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 } 
