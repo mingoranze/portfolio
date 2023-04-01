@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 .close {
     display: none;
@@ -23,6 +24,12 @@ section {
     flex-direction: column;
     transition: ease all .3s;
     max-width: 100%;
+}
+section h2 {
+    font-weight: bold;
+}
+section p {
+    font-weight: 300;
 }
 header {
     display: flex;
@@ -46,6 +53,7 @@ header {
     align-items: center;
     margin-top: 60px;
 }
+
 .header-pessoa .img{
     border-radius: 50px;
     overflow: hidden;
@@ -63,17 +71,19 @@ header {
 .header-pessoa h1 {
     font-size: 1rem;
     color: #c9ada7;
+    font-weight: 500;
 }
 .header-pessoa p {
-    font-size: .6rem;
+    font-size: .7rem;
     color: #c9ada7;
+    font-weight: 300;
 }
 .social {
     display: flex;
     justify-content: center;
 }
 .social img {
-    width: 11px;
+    width: 15px;
     margin: 5px;
     cursor: pointer;
 }
@@ -91,6 +101,7 @@ nav ul li {
     text-transform: uppercase;
     font-size: 0.7rem;
     color: #c9ada7;
+    font-weight: 500;
 }
 nav ul li a {
     color: #c9ada7;
