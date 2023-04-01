@@ -16,7 +16,6 @@ inicio.addEventListener('click', (e)=>{
     portfolioSection.style.display = 'none'
     habilidadesSection.style.display = 'none'
     inicioSection.style.display = 'flex'
-    menu.style.width = '0%'
 });
 
 sobre.addEventListener('click', (e)=>{
@@ -27,7 +26,6 @@ sobre.addEventListener('click', (e)=>{
 
     if(sobreSection.style.display = 'none') {
         sobreSection.style.display = 'flex'
-        menu.style.width = '0%'
     } else {
         sobreSection.style.display = 'none'    
     }
@@ -41,7 +39,6 @@ portfolio.addEventListener('click', (e)=>{
 
     if(portfolioSection.style.display = 'none') {
         portfolioSection.style.display = 'flex'
-        menu.style.width = '0%'
     } else {
         portfolioSection.style.display = 'none'    
     }
@@ -55,7 +52,6 @@ habilidades.addEventListener('click', (e)=>{
 
     if(habilidadesSection.style.display = 'none') {
         habilidadesSection.style.display = 'flex'
-        menu.style.width = '0%'
     } else {
         habilidadesSection.style.display = 'none'    
     }
