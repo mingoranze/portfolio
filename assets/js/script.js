@@ -8,7 +8,7 @@ const portfolioSection = document.querySelector('.portfolio');
 const habilidadesSection = document.querySelector('.habilidades');
 const menuOpen = document.querySelector('.menu-mobile');
 const closeMenu = document.querySelector('.close')
-const menu = document.querySelector('.header-left')
+const menu = document.querySelector('.menu')
 
 inicio.addEventListener('click', (e)=>{
     e.preventDefault()
@@ -16,6 +16,7 @@ inicio.addEventListener('click', (e)=>{
     portfolioSection.style.display = 'none'
     habilidadesSection.style.display = 'none'
     inicioSection.style.display = 'flex'
+    menu.style.display = 'none'
 });
 
 sobre.addEventListener('click', (e)=>{
@@ -26,6 +27,7 @@ sobre.addEventListener('click', (e)=>{
 
     if(sobreSection.style.display = 'none') {
         sobreSection.style.display = 'flex'
+        menu.style.display = 'none'
     } else {
         sobreSection.style.display = 'none'    
     }
@@ -39,6 +41,7 @@ portfolio.addEventListener('click', (e)=>{
 
     if(portfolioSection.style.display = 'none') {
         portfolioSection.style.display = 'flex'
+        menu.style.display = 'none'
     } else {
         portfolioSection.style.display = 'none'    
     }
@@ -51,20 +54,25 @@ habilidades.addEventListener('click', (e)=>{
     inicioSection.style.display = 'none'
 
     if(habilidadesSection.style.display = 'none') {
-        habilidadesSection.style.display = 'flex'
+        habilidadesSection.style.display = 'flex';
+        menu.style.display = 'none';
     } else {
-        habilidadesSection.style.display = 'none'    
+        habilidadesSection.style.display = 'none';   
     }
 });
 
 menuOpen.addEventListener('click', (e)=>{
     e.preventDefault()
-    if(menu.style.width = '0%') {
-        menu.style.width = '100%';
+    if(menu.style.display = 'none') {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none'
     }
+    
+    
 });
-closeMenu.addEventListener('click', (e)=>{
-    e.preventDefault()
-    menu.style.width = '0%'
-})
- 
+
+
+
+
+
