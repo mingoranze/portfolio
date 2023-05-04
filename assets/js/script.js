@@ -72,7 +72,18 @@ menuOpen.addEventListener('click', (e)=>{
     
 });
 
+let totalItems = document.querySelectorAll('.projeto-item').length;
 
+let portfolioWidth = document.querySelector('.slider').clientWidth;
+let portfolioHeight = document.querySelector('.slider').clientHeight;
+
+document.querySelector('.projetos').style.width = 
+    `${totalItems * portfolioWidth}px`;
+
+document.querySelector('.controles').style.width = 
+    `${portfolioWidth}px`;
+document.querySelector('.controles').style.height = 
+    `${portfolioHeight}px`;
 
 
 
