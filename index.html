@@ -1,146 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="ptt-br">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keven Mingoranze</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                escuro: '#22223b',
+                medio: '#4a4e69',
+                claro: '#c9ada7',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+          * {
+              font-family: 'Poppins';   
+          }
+      </style>
 </head>
 <body>
-    <div class="container">
-        <header>    
-            <div class="header-left">
-                <div class="menu-mobile">
-                    <img src="assets/images/menu.svg" alt="menu">
+    <header class="w-full h-24 bg-escuro flex items-center">
+        <div class="container mx-auto">
+            <div class="area flex justify-between">
+                <div class="menu w-8">
+                    <img src="assets/images/menu.svg" alt="">
                 </div>
+                <h2 class="text-claro">KM</h2>
             </div>
-            <div class="menu">
-
-                <div class="header-pessoa">
-                    <div class="img">
+        </div>
+    </header>
+    <main>
+        <section id="home" class="bg-medio h-screen">
+            <div class="container mx-auto h-full">
+                <div class="area h-full flex flex-col items-center">
+                    <div class="mt-20">
+                        <h1 class="text-claro text-xl font-bold drop-shadow-sm ">Keven Mingoranze</h1>
+                        <h2 class="text-claro text-sm font-light">Desenvolvedor Mobile</h2>
+                        <div class="social flex">
+                            <a href="">
+                                <img class="w-6 h-6 mr-3" src="assets/images/git.png" alt="">
+                            </a>
+                            <a href="">
+                                <img class="w-6 h-6 mr-3" src="assets/images/whats.png" alt="">
+                            </a>
+                            <a href="">
+                                <img class="w-6 h-6" src="assets/images/linkedin.png" alt="">
+                            </a>
+                        </div>
+                        <button class="bg-escuro text-claro mt-4 px-3 py-2 rounded-full text-sm font-bold shadow-md shadow-black">Baixar curriculo</button>
+                    </div>
+                    <div class="rounded-full overflow-hidden w-1/2 mt-10 shadow-lg shadow-black">
                         <img src="assets/images/eu.jpg" alt="">
                     </div>
-                    <h1>Keven Mingoranze</h1>
-                    <p>Desenvolvedor mobile</p>
                 </div>
-                <div class="social">
-                    <a href="https://wa.me/5511958586699" target="_blank">
-                        <img src="assets/images/whats.png" alt="whats" class="img-social">
-                    </a>
-                    <a href="https://www.linkedin.com/in/mingoranze" target="_blank">
-                        <img src="assets/images/linkedin.png" alt="linkedin" class="img-social">
-                    </a>
-                    <a href="https://github.com/mingoranze" target="_blank">
-                        <img src="assets/images/git.png" alt="github" class="img-social">
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="link-inicio">
-                            <a href="">Inicio</a>
-                        </li>
-                        <li class="link-sobre">
-                            <a href="">Sobre</a>
-                        </li>
-                        <li class="link-habilidades">
-                            <a href="">Habilidades</a>
-                        </li>
-                        <li class="link-portfolio">
-                            <a href="">Portfolio</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
+        </section>
 
-            <div class="header-right">
-                <section class="inicio">
-                    <h2>Hello World !</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta totam officia voluptates quos necessitatibus, voluptatibus error consequuntur cupiditate dolore consectetur animi nulla numquam voluptate quibusdam nisi quod expedita suscipit illo.</p>
-                </section>
-                <section class="sobre">
-                    <h2>Sobre mim</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet, dignissimos quas minus magni minima eum reiciendis illo ullam repellat. Laboriosam a culpa delectus iste distinctio? Beatae omnis eveniet dicta?</p>
-                    
-                </section>
-
-                <section class="habilidades">
-                    <h2>Habilidades</h2>
-                    <div class="habilidades-area">
-                        <h3>Tecnologias</h3>
-                        <div class="skill-area">
-                            <div class="skill">
-                                <img src="./assets/images/html.png" alt="">
-                                <p>html</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./assets/images/css.png" alt="">
-                                <p>css</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./assets/images/js.png" alt="">
-                                <p>javascript</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./assets/images/git.png" alt="">
-                                <p>github</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./assets/images/react.png" alt="">
-                                <p>react native</p>
-                            </div>
+        <section class="h-screen">
+            <div class="area1 bg-escuro h-1/2">
+                <div class="container mx-auto">
+                    <div class="p-4">
+                        <div class="titulo w-full p-4 flex flex-col items-center">
+                            <h2 class="text-xl font-bold text-claro">Sobre</h2> 
+                            <div class="line w-6 h-1 bg-claro"></div>
                         </div>
-                        <h3>Soft skills</h3>
-                        <div class="skill-area">
-                            <div class="skill">
-                                <img src="./assets/images/proati.png" alt="">
-                                <p>Proatividade</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./assets/images/comunicacao.png" alt="">
-                                <p>Comunicação</p>
-                            </div>
-                           
-                        </div>  
+                        <p class="text-claro font-light text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi voluptates iusto non eum enim tempora assumenda. Officiis in amet beatae, deleniti qui perspiciatis repellendus quam quidem vitae delectus laborum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="area2 bg-claro h-1/2">
+                <div class="container mx-auto">
+                    <div class="titulo w-full p-4 flex flex-col items-center">
+                        <h2 class="text-xl font-bold text-escuro">Habilidades</h2> 
+                        <div class="line w-6 h-1 bg-escuro"></div>
+                    </div>
+                    <div class="habilidades flex justify-center items-center">
+                        <div class="w-16 m-2 flex flex-col items-center">
+                            <img class="" src="assets/images/html.png" alt="">
+                            <span class="text-escuro font-bold text-sm">HTML</span>
+                        </div>
+                        <div class="w-16 m-2 flex flex-col items-center">
+                            <img src="assets/images/css.png" alt="">
+                            <span class="text-escuro font-bold text-sm">CSS</span>
+                        </div>
+                        <div class="w-16 m-2 flex flex-col items-center">
+                            <img src="assets/images/js.png" alt="">
+                            <span class="text-escuro font-bold text-sm">Javascript</span>
+                        </div>
                         
-                    </div> 
-                </section>
-
-                <section class="portfolio">
-                    <h2>Portfolio</h2>
-                    <div class="portfolio-area">
-                        <div class="slider">
-                            <div class="controles">
-                                <div class="controleVoltar">
-                                    <img src="assets/images/arrowBack.svg" alt="">
-                                </div>
-                                <div class="controleIr">
-                                    <img src="assets/images/arrowGo.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="projetos">
-                                <div class="projeto-item">
-                                    <img src="assets/images/smartphone.png" alt="">
-                                </div>
-                                <div class="projeto-item">
-                                    <img src="assets/images/smartphone.png" alt="">
-                                </div>
-                                <div class="projeto-item">
-                                    <img src="assets/images/smartphone.png" alt="">
-                                </div>
-                            </div>
+                        <div class="w-16 m-2 flex flex-col items-center">
+                            <img src="assets/images/react.png" alt="">
+                            <span class="text-escuro font-bold text-sm">React native</span>
+                        </div>
+                        <div class="w-16 m-2 flex flex-col items-center">
+                            <img class="w-full" src="assets/images/tailwind.png" alt="">
+                            <span class="text-escuro font-bold text-sm">Tailwind</span>
                         </div>
                     </div>
-                </section>
-
-
+                </div>
             </div>
-        </header>
+        </section>
 
-    </div>
-    <script src="assets/js/script.js"></script>
+        <section class="bg-medio h-screen">
+            <div class="titulo w-full p-4 flex flex-col items-center">
+                <h2 class="text-xl font-bold">Portfolio</h2> 
+                <div class="line w-6 h-1 bg-claro"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-escuro h-24 flex flex-col justify-center items-center">
+        <p class="text-claro my-3">Keven Mingoranze</p>
+        <div class="social flex">
+            <a href="">
+                <img class="w-6 h-6 mr-3" src="assets/images/git.png" alt="">
+            </a>
+            <a href="">
+                <img class="w-6 h-6 mr-3" src="assets/images/whats.png" alt="">
+            </a>
+            <a href="">
+                <img class="w-6 h-6" src="assets/images/linkedin.png" alt="">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
