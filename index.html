@@ -28,56 +28,47 @@
       </style>
 </head>
 <body>
-    <header class="w-full h-24 bg-escuro flex items-center">
-        <div class="container mx-auto">
-            <div class="area flex justify-between">
-                <div class="menu w-8">
-                    <img src="assets/images/menu.svg" alt="">
-                </div>
-                <h2 class="text-claro">KM</h2>
-            </div>
-        </div>
-    </header>
     <main>
-        <section id="home" class="bg-medio h-screen">
+        <section id="home" class="h-screen bg-medio">
             <div class="container mx-auto h-full">
                 <div class="area h-full flex flex-col items-center">
                     <div class="mt-20">
                         <h1 class="text-claro text-xl font-bold drop-shadow-sm ">Keven Mingoranze</h1>
-                        <h2 class="text-claro text-sm font-light">Desenvolvedor Mobile</h2>
+                        <h2 class="text-claro text-sm font-light">Desenvolvedor <span class="text-escuro font-bold">Mobile</span></h2>
                         <div class="social flex">
                             <a href="https://github.com/mingoranze" target="_blank">
-                                <img class="w-6 h-6 mr-3" src="assets/images/git.png" alt="">
+                                <img class="w-4 h-4 mr-3" src="assets/images/git.png" alt="">
                             </a>
                             <a href="https://wa.me/5511958586699" target="_blank">
-                                <img class="w-6 h-6 mr-3" src="assets/images/whats.png" alt="">
+                                <img class="w-4 h-4 mr-3" src="assets/images/whats.png" alt="">
                             </a>
                             <a href="https://www.linkedin.com/in/mingoranze/" target="_blank">
-                                <img class="w-6 h-6" src="assets/images/linkedin.png" alt="">
+                                <img class="w-4 h-4" src="assets/images/linkedin.png" alt="">
                             </a>
                         </div>
-                        <button class="bg-escuro hover:bg-escuro-500  text-claro mt-4 px-3 py-2 rounded-full text-sm font-bold shadow-md shadow-black">Baixar curriculo</button>
+                        <button class="bg-escuro text-claro mt-4 px-3 py-2 rounded-full text-sm font-bold shadow-md shadow-black">Baixar curriculo</button>
                     </div>
-                    <div class="rounded-full overflow-hidden w-52 h-52 mt-10 shadow-lg shadow-black">
+                    <div class="hidden rounded-full overflow-hidden w-52 h-52 mt-10 shadow-lg shadow-black">
                         <img src="assets/images/eu.jpg" alt="">
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="h-screen">
+        <section id="sobre" class="h-screen">
             <div class="area1 bg-escuro h-1/2">
-                <div class="container mx-auto">
-                    <div class="p-4">
+                <div class="container mx-auto h-full">
+                    <div class="p-4 h-3/4">
                         <div class="titulo w-full p-4 flex flex-col items-center">
                             <h2 class="text-xl font-bold text-claro">Sobre</h2> 
                             <div class="line w-6 h-1 bg-claro"></div>
                         </div>
-                        <p class="text-claro font-light text-md">Comecei meus estudos em desenvolvimento web e fui migrando para o desenvolvimento mobile atraves do JS.</p>
+                        <p class="text-claro p-2 font-light text-md h-full border border-claro rounded-tl-md text-justify">Comecei meus estudos em desenvolvimento web e fui migrando para o desenvolvimento mobile atraves do JS.</p>
                     </div>
                 </div>
             </div>
-            <div class="area2 bg-claro h-1/2">
+            <div id="habilidades" class="area2 bg-claro h-1/2">
                 <div class="container mx-auto">
                     <div class="titulo w-full p-4 flex flex-col items-center">
                         <h2 class="text-xl font-bold text-escuro">Habilidades</h2> 
@@ -112,58 +103,31 @@
 
         <section class="bg-medio h-auto">
             <div class="titulo w-full p-4 flex flex-col items-center">
-                <h2 class="text-xl font-bold">Portfolio</h2> 
-                <div class="line w-6 h-1 bg-claro"></div>
+                <h2 class="text-xl text-claro font-bold">Portfolio</h2> 
+                <div class="line w-6 h-0.5 bg-claro"></div>
                 <div class="container mx-auto relative">
                     <div class="area flex gap-4 flex-wrap justify-center mt-10">
                         <div class="item  flex justify-center items-center flex-col w-1/2">
                             <div class="rounded-md shadow-md shadow-teal-50 overflow-hidden">
                                 <img class="" src="assets/images/portfolio1.jpg" alt="">
                             </div>
-                        </div>
-
-                        <div class="item  flex justify-center items-center flex-col w-1/2">
-                            <div class="rounded-md shadow-md shadow-teal-50 overflow-hidden">
-                                <img class="" src="assets/images/portfolio1.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="item  flex justify-center items-center flex-col w-1/2">
-                            <div class="rounded-md shadow-md shadow-teal-50 overflow-hidden">
-                                <img class="" src="assets/images/portfolio1.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="item  flex justify-center items-center flex-col w-1/2">
-                            <div class="rounded-md shadow-md shadow-teal-50 overflow-hidden">
-                                <img class="" src="assets/images/portfolio1.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="item  flex justify-center items-center flex-col w-1/2">
-                            <div class="rounded-md shadow-md shadow-teal-50 overflow-hidden">
-                                <img class="" src="assets/images/portfolio1.jpg" alt="">
-                            </div>
-                        </div>
-                        
-
-                        
+                        </div>             
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="bg-escuro h-24 flex flex-col justify-center items-center">
-        <p class="text-claro my-3 text-sm">Keven Mingoranze</p>
+        <p class="text-claro my-3 text-xs">Keven Mingoranze</p>
         <div class="social flex">
             <a href="https://github.com/mingoranze" target="_blank">
-                <img class="w-6 h-6 mr-3" src="assets/images/git.png" alt="">
+                <img class="w-4 h-4 mr-3" src="assets/images/git.png" alt="">
             </a>
             <a href="https://wa.me/5511958586699" target="_blank">
-                <img class="w-6 h-6 mr-3" src="assets/images/whats.png" alt="">
+                <img class="w-4 h-4 mr-3" src="assets/images/whats.png" alt="">
             </a>
             <a href="https://www.linkedin.com/in/mingoranze/" target="_blank">
-                <img class="w-6 h-6" src="assets/images/linkedin.png" alt="">
+                <img class="w-4 h-4" src="assets/images/linkedin.png" alt="">
             </a>
         </div>
     </footer>
