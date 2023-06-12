@@ -1,4 +1,4 @@
 skillJason.map((item)=>{
-    console.log(item)
+    let skillItem = document.querySelector('')
 });
 
