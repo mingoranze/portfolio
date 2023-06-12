@@ -66,8 +66,7 @@
                     <div class="cima w-full ml-2 h-1/4 mb-8 border border-claro rounded-md shadow-sm shadow-black">
                         <p class="text-claro p-3 font-light text-sm ">Comecei meus estudos em desenvolvimento web e fui migrando para o desenvolvimento mobile atraves do JS.</p>
                     </div>
-                    <button class="bg-escuro text-claro mt-4 px-3 py-2 rounded-full text-sm font-bold shadow-md shadow-black">Portfolio</button>
-                    <button class="bg-escuro text-claro mt-4 px-3 py-2 rounded-full text-sm font-bold shadow-md shadow-black">Baixar curriculo</button>
+                    <button class="bg-escuro text-claro mt-4 px-3 py-2 rounded-full text-sm font-bold shadow-md shadow-black hover:bg-medio">Baixar curriculo</button>
                 </div>
             </div>
         </section>
@@ -81,31 +80,15 @@
                         <div class="line w-6 h-0.5 bg-claro"></div>
                     </div>
                 </div>
-                <div class="container mx-auto px-3 md:flex md:justify-center">  
-                    <div class="baixo bg-escuro/75 shadow-lg shadow-black w-full md:w-2/3 h-auto rounded-md relative">
-                        <div class="habilidades flex justify-center items-center flex-wrap">
-                            <div class="w-1/5 m-2 flex flex-col items-center">
-                                <img class="" src="assets/images/html.png" alt="">
-                                <span class="text-claro font-bold text-xs">HTML</span>
+                <div class="container mx-auto px-3">  
+                    <div id="skill-area" class="relative hidden">
+                        <div id="skill-item" class="p-3 mb-2 flex items-center justify-between bg-escuro rounded-md shadow-md shadow-black">
+                            <div class="flex flex-col items-center">
+                                <img class="w-16" src="" alt="html">
+                                <p class="text-claro font-bold"></p>
                             </div>
-                            <div class="w-1/5 m-2 flex flex-col items-center">
-                                <img src="assets/images/css.png" alt="">
-                                <span class="text-claro font-bold text-xs">CSS</span>
-                            </div>
-                            <div class="w-1/5 m-2 flex flex-col items-center">
-                                <img src="assets/images/js.png" alt="">
-                                <span class="text-claro font-bold text-xs">Javascript</span>
-                            </div>
-                                
-                            <div class="w-1/5 m-2 flex flex-col items-center">
-                                <img src="assets/images/react.png" alt="">
-                                <span class="text-claro font-bold text-xs text-center">React native</span>
-                            </div>
-                            <div class="w-1/5 m-2 flex flex-col items-center">
-                                <img class="w-full" src="assets/images/tailwind.png" alt="">
-                                <span class="text-claro font-bold text-xs">Tailwind</span>
-                            </div>
-                        </div>
+                            <a class="text-claro text-xs italic animate-pulse" href="#">abrir certificado</a>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -141,5 +124,7 @@
             </a>
         </div>
     </footer>
+    <script src="./assets/js/skill.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
