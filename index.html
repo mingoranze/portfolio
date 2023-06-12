@@ -28,14 +28,15 @@
       </style>
 </head>
 <body>
-    <div id="skill-area" class="relative hidden">
-        <div id="skill-item" class="p-3 mb-2 flex items-center justify-between bg-escuro rounded-md shadow-md shadow-black">
+    <div class="models hidden">
+        <div id="skill-item" class=" p-3 mb-2 flex items-center justify-between bg-escuro rounded-md shadow-md shadow-black">
             <div class="flex flex-col items-center">
-                <img class="w-16" src="" alt="...">
-                <p class="text-claro font-bold">...</p>
+                <img id="img" class="w-16" src="" alt="...">
+                <p class="text-claro font-bold text-xs">...</p>
             </div>
             <a class="text-claro text-xs italic animate-pulse" href="#">abrir certificado</a>
-        </div>   
+        </div>  
+        
     </div>
     <main>
         <section id="home" class="h-screen">
@@ -80,13 +81,18 @@
             </div>
         </section>
 
-        <section id="Habilidades" class="h-screen bg-escuro">
+        <section id="Habilidades" class="h-auto bg-escuro">
             <img class="absolute w-screen h-screen object-cover opacity-20" src="assets/images/inicio.jpg" alt="">
             <div class="area">
                 <div class="p-4 h-3/4">
                     <div class="titulo w-full p-4 flex flex-col items-center relative">
                         <h2 class="text-xl font-bold text-claro">Habilidades</h2> 
                         <div class="line w-6 h-0.5 bg-claro"></div>
+                    </div>
+                    <div id="skill-area" class="relative">
+                        <div id="modal" class="absolute flex justify-center items-center bg-black/75 inset-x-0 inset-y-0 z-50">                    
+                                <img class="w-full md:w-2/3 h-auto" src="assets/images/certificados/htmlcss.jpg" alt="...">
+                        </div>
                     </div>
                 </div>
                 <div class="container mx-auto px-3">  
