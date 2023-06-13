@@ -89,10 +89,11 @@
                         <h2 class="text-xl font-bold text-claro">Habilidades</h2> 
                         <div class="line w-6 h-0.5 bg-claro"></div>
                     </div>
-                    <div id="skill-area" class="relative">
-                        <div id="modal" class="absolute flex justify-center items-center bg-black/75 inset-x-0 inset-y-0 z-50">                    
-                                <img class="w-full md:w-2/3 h-auto" src="assets/images/certificados/htmlcss.jpg" alt="...">
-                        </div>
+                    <div id="skill-area" class="relative ">
+                        <dialog id="modal" class="hidden transition-all duration-200 ease-linear absolute w-full h-full flex flex-col justify-center items-center bg-black/75 inset-x-0 inset-y-0 z-50">                    
+                            <img id="imgModal" class="w-full md:w-2/3 h-auto" src="" alt="...">
+                            <button onclick="closeModal()" class="text-claro uppercase mt-2 text-xs">fechar</button>
+                        </dialog>
                     </div>
                 </div>
                 <div class="container mx-auto px-3">  
